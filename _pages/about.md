@@ -18,7 +18,7 @@ I'm an AI Team Lead at Urban Systems Ltd., where I specialize in bridging cuttin
 🏆 Career Highlights
 ======
 🧠 AI Team Lead @ Urban Systems Ltd. (2023–Present)
-
+------
 * 🚀 **Built the AI Practice from Scratch**: Spearheaded and scaled a company-wide AI initiative, scoping 100+ projects across 15+ business domains, unlocking over $10M in potential annual savings through intelligent automation and workflow optimization.
 
 * 👥 **Team Growth & Leadership**: Expanded the AI team from 1 to 4 members, overseeing hiring, onboarding, and strategic direction, while also leading technical execution and mentorship.
@@ -32,10 +32,11 @@ I'm an AI Team Lead at Urban Systems Ltd., where I specialize in bridging cuttin
 * 🧩 **Graph Intelligence for Planning**: Created a powerful graph-based ERP forecasting tool using Neo4j + GraphSAGE, enabling smarter workforce planning. Integrated Redis for ultra-fast caching, Microsoft Entra ID + MSAL for secure access control, and added semantic search for intelligent data retrieval.
 
 🧑‍🏫 Graduate Teaching Assistant (2024)
-
+-----
 * Facilitated **Full Stack Web Development** lab to over 40 students at the University of Calgary, emphasizing React, Node, and deployment best practices.
 
-💬 Community Engagement
+💬 Community Engagement & Talks
+-----
 I love giving back! I’ve:
 * 📊 Apr 2025: Supplied a dataset and participated as an industry sponsor at the Data Science & Machine Learning Club Final Symposium.
 
@@ -45,7 +46,7 @@ I love giving back! I’ve:
 
 * 🏘️ Jan 2025: Sponsored and attended the 2025 Westman Centre for Real Estate Case Competition, focused on Affordable Housing.
 
-* 🧑‍🏫 Jan 2025: Gave a guest lecture on "Introduction to Large Language Models" for graduate students at the University of Calgary.
+* 🧑‍🏫 Jan 2025: Delivered a guest lecture on "Introduction to Large Language Models" for graduate students at the University of Calgary.
 
 * 👨‍🔬 Jan – Apr 2025: Acted as industry advisor for two graduate-level capstone projects, mentoring on graph machine learning and full-stack web development.
 

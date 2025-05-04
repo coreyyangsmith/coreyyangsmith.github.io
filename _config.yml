@@ -22,7 +22,7 @@ repository               : "coreyyangsmith/coreyyangsmith.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "files/coreyyangsmith.png"
+  avatar           : "coreyyangsmith.jpg"
   name             : "Corey Yang-Smith"
   pronouns         : "he/him"  
   bio              : "AI Team Lead @ Urban Systems | PhD Student @ University of Calgary"
