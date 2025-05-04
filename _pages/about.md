@@ -10,12 +10,16 @@ redirect_from:
 
 AI Team Lead | Researcher | Builder of Practical AI Systems
 
-📍 Calgary, Alberta | 📧 [corey.yangsmith@gmail.com](mailto:corey.yangsmith@gmail.com) | 🌐 [GitHub](https://github.com/coreyyangsmith)
+I'm based in Calgary, Alberta
+Contact me at: 📧 [corey.yangsmith@gmail.com](mailto:corey.yangsmith@gmail.com)
+Check out my projects: 🌐 [GitHub](https://github.com/coreyyangsmith)
 
-🚀 About Me
+🚀 **About Me**
+
 I'm an AI Team Lead at Urban Systems Ltd., where I specialize in bridging cutting-edge artificial intelligence with the real-world needs of civil engineering, construction, and public engagement. I turn emerging research into practical tools that drive measurable business impact—whether that’s streamlining operations, enhancing design, or automating decision-making.
 
 🔍 Currently, I’m completing my PhD in Software Engineering at the University of Calgary, where I focus on automating software development workflows using large language models (LLMs). I’m deeply passionate about AI, especially in the areas of LLMs, generative AI, and multi-agent systems.
+
 
 🏆 Career Highlights
 ======
@@ -34,11 +38,11 @@ I'm an AI Team Lead at Urban Systems Ltd., where I specialize in bridging cuttin
 * 🧩 **Graph Intelligence for Planning**: Created a powerful graph-based ERP forecasting tool using Neo4j + GraphSAGE, enabling smarter workforce planning. Integrated Redis for ultra-fast caching, Microsoft Entra ID + MSAL for secure access control, and added semantic search for intelligent data retrieval.
 
 🧑‍🏫 Graduate Teaching Assistant (2024)
------
+------
 * Facilitated **Full Stack Web Development** lab to over 40 students at the University of Calgary, emphasizing React, Node, and deployment best practices.
 
 💬 Community Engagement & Talks
------
+------
 I love giving back! I’ve:
 * 📊 Apr 2025: Supplied a dataset and participated as an industry sponsor at the Data Science & Machine Learning Club Final Symposium.
 
@@ -53,6 +57,7 @@ I love giving back! I’ve:
 * 👨‍🔬 Jan – Apr 2025: Acted as industry advisor for two graduate-level capstone projects, mentoring on graph machine learning and full-stack web development.
 
 * 🎓 Sept 2024 – Apr 2025: Acted as industry advisor for two undergraduate-level capstone projects, mentoring on large language model development and full-stack web development.
+
 
 🧪 Research & Exploration
 ======
