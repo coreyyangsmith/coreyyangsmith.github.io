@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 👨‍💻 Corey Yang-Smith
+
 AI Team Lead | Researcher | Builder of Practical AI Systems
+
 📍 Calgary, Alberta | 📧 [corey.yangsmith@gmail.com](mailto:corey.yangsmith@gmail.com) | 🌐 [GitHub](https://github.com/coreyyangsmith)
 
 🚀 About Me

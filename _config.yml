@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Corey's Homepage"
 title_separator          : "-"
 name                     : &name "Corey Yang-Smith"
-description              : &description "personal description"
+description              : &description "AI Team Lead @ Urban Systems | PhD Student @ University of Calgary"
 url                      : https://coreyyangsmith.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "coreyyangsmith/coreyyangsmith.github.io"
@@ -28,7 +28,7 @@ author:
   bio              : "AI Team Lead @ Urban Systems | PhD Student @ University of Calgary"
   location         : "Calgary, AB, Canada"
   employer         : "University of Calgary"
-  uri              : "https://www.linkedin.com/in/corey-yang-smith/"
+  uri              : "https://www.coreyyangsmith.github.io"
   email            : "corey.yangsmith@gmail.com" 
 
   # Academic websites
