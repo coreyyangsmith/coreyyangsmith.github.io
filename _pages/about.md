@@ -8,11 +8,14 @@ redirect_from:
 ---
 👨‍💻 Corey Yang-Smith
 
-AI Team Lead | Researcher | Builder of Practical AI Systems
+🌍 Based in Calgary, Alberta, Canada
 
-I'm based in Calgary, Alberta
-Contact me at: 📧 [corey.yangsmith@gmail.com](mailto:corey.yangsmith@gmail.com)
-Check out my projects: 🌐 [GitHub](https://github.com/coreyyangsmith)
+### Connect With Me
+- 📧 Email: [corey.yangsmith@gmail.com](mailto:corey.yangsmith@gmail.com)
+- 💻 GitHub: [github.com/coreyyangsmith](https://github.com/coreyyangsmith)
+- 🔗 LinkedIn: [linkedin.com/in/coreyyangsmith](https://linkedin.com/in/coreyyangsmith)
+- 🐦 Twitter: [@coreyyangsmith](https://twitter.com/coreyyangsmith)
+- 📚 Google Scholar: [Corey Yang-Smith](https://scholar.google.ca/citations?user=yDivcf8AAAAJ&hl=en&oi=ao)
 
 🚀 **About Me**
 
@@ -23,6 +26,7 @@ I'm an AI Team Lead at Urban Systems Ltd., where I specialize in bridging cuttin
 
 🏆 Career Highlights
 ======
+
 🧠 AI Team Lead @ Urban Systems Ltd. (2023–Present)
 ------
 * 🚀 **Built the AI Practice from Scratch**: Spearheaded and scaled a company-wide AI initiative, scoping 100+ projects across 15+ business domains, unlocking over $10M in potential annual savings through intelligent automation and workflow optimization.
