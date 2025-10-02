@@ -11,7 +11,7 @@ redirect_from:
 🌍 Based in Calgary, Alberta, Canada
 
 ### Connect With Me
-- 📧 Email: [corey.yangsmith@gmail.com](mailto:corey.yangsmith@gmail.com)
+- 📧 Email: [corey.yangsmith@gmail.com](mailto:corey.yangsmith+gh@gmail.com)
 - 💻 GitHub: [github.com/coreyyangsmith](https://github.com/coreyyangsmith)
 - 🔗 LinkedIn: [linkedin.com/in/coreyyangsmith](https://linkedin.com/in/coreyyangsmith)
 - 🐦 Twitter: [@coreyyangsmith](https://twitter.com/coreyyangsmith)
