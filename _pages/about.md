@@ -19,14 +19,18 @@ redirect_from:
 
 🚀 **About Me**
 
-I'm an AI Team Lead at Urban Systems Ltd., where I specialize in bridging cutting-edge artificial intelligence with the real-world needs of civil engineering, construction, and public engagement. I turn emerging research into practical tools that drive measurable business impact—whether that’s streamlining operations, accelerating design, or enhancing decision-making.
+I'm a Machine Learning Scientist at SOVRA, where I develop, experiment, and productionize AI/ML solutions to solve problems in the public sector. Previously I lead the Software/ML Team at Urban Systems Ltd., where I specialized in bridging AI with the real-world needs of civil engineering, construction management, and public engagement. I turn emerging research into practical tools that drive measurable business impact—whether that’s streamlining operations, accelerating design, or enhancing decision-making.
 
 🔍 Currently, I’m completing my PhD in Software Engineering at the University of Calgary, where I focus on automating software development workflows using LLMs. I’m deeply passionate about AI, especially in the areas of LLMs, generative AI, and multi-agent systems.
 
 🏆 Career Highlights
 ======
 
-🧠 AI Team Lead @ Urban Systems Ltd. (2023–Present)
+🧪 Machine Learning Scientist @ SOVRA (2025 - Present)
+------
+* 🌟 Currently working on a handful of high-impact AI projects across the organization.
+
+🧠 AI Team Lead @ Urban Systems Ltd. (2023–2025)
 ------
 * 🚀 **Built the AI Practice from Scratch**: Spearheaded and scaled a company-wide AI initiative, scoping 100+ projects across 15+ business domains, unlocking over $10M in potential annual savings through intelligent automation and workflow optimization.
 
