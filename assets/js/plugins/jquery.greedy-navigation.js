@@ -13,14 +13,18 @@ var $themeToggle = $('#theme-toggle');
 
 var breaks = [];
 
+function vlinksContentWidth() {
+  var w = 0;
+  $vlinks.children().each(function () {
+    w += $(this).outerWidth(true);
+  });
+  return w;
+}
+
 function availableSpace() {
-  var toggleWidth = $themeToggle.outerWidth(true) || 0;
-
-  if ($btn.hasClass('hidden')) {
-    return $nav.width() - toggleWidth;
-  }
-
-  return $nav.width() - $btn.width() - 30 - toggleWidth;
+  // visible-links is a flex child that receives remaining space after the
+  // in-flow theme toggle and hamburger button.
+  return $vlinks.width();
 }
 
 function updateNav() {
@@ -28,18 +32,16 @@ function updateNav() {
   var space = availableSpace();
 
   // The visible list is overflowing the nav
-  if ($vlinks.width() > space) {
+  if (vlinksContentWidth() > space) {
 
-    while ($vlinks.width() > space && $vlinks.children("*:not(.persist)").length > 0) {
+    while (vlinksContentWidth() > availableSpace() && $vlinks.children("*:not(.persist)").length > 0) {
       // Record the width of the list
-      breaks.push($vlinks.width());
+      breaks.push(vlinksContentWidth());
 
       // Move item to the hidden list
       $vlinks.children("*:not(.persist)").last().prependTo($hlinks);
 
-      space = availableSpace();
-
-      // Show the dropdown btn
+      // Show the dropdown btn (changes available space on next measure)
       $btn.removeClass("hidden");
     }
 
@@ -47,10 +49,15 @@ function updateNav() {
   } else {
 
     // There is space for another item in the nav
-    while (breaks.length > 0 && space > breaks[breaks.length - 1]) {
+    while (breaks.length > 0 && availableSpace() > breaks[breaks.length - 1]) {
       // Move the item to the visible list
       $hlinks.children().first().appendTo($vlinks);
       breaks.pop();
+
+      // If more items may fit, keep the btn visible until the loop ends
+      if (breaks.length < 1) {
+        $btn.addClass('hidden');
+      }
     }
 
     // Hide the dropdown btn if hidden list is empty
