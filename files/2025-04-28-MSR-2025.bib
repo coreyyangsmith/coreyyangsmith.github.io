@@ -1,10 +1,13 @@
-@INPROCEEDINGS{11025716,
-  author={Yang-Smith, Corey and Abdellatif, Ahmad},
-  booktitle={2025 IEEE/ACM 22nd International Conference on Mining Software Repositories (MSR)}, 
-  title={Tracing Vulnerabilities in Maven: A Study of CVE lifecycles and Dependency Networks}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={349-353},
-  keywords={Measurement;Prevention and mitigation;Ecosystems;Collaboration;Market research;Software;Libraries;Time factors;Security;Software development management;Software Ecosystems;Maven;Software Vulnerabilities},
-  doi={10.1109/MSR66628.2025.00064}}
+@inproceedings{10.1109/MSR66628.2025.00064,
+author = {Yang-Smith, Corey and Abdellatif, Ahmad},
+title = {Tracing Vulnerabilities in Maven: A Study of CVE lifecycles and Dependency Networks},
+year = {2025},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/MSR66628.2025.00064},
+doi = {10.1109/MSR66628.2025.00064},
+abstract = {Software ecosystems rely on centralized package registries, such as Maven, to enable code reuse and collaboration. However, the interconnected nature of these ecosystems amplifies the risks posed by security vulnerabilities in direct and transitive dependencies. While numerous studies have examined vulnerabilities in Maven and other ecosystems, there remains a gap in understanding the behavior of vulnerabilities across parent and dependent packages, and the response times of maintainers in addressing vulnerabilities. This study analyzes the lifecycle of 3,362 CVEs in Maven to uncover patterns in vulnerability mitigation and identify factors influencing at-risk packages. We conducted a comprehensive study integrating temporal analyses of CVE lifecycles, correlation analyses of GitHub repository metrics, and assessments of library maintainers’ response times to patch vulnerabilities, utilizing a package dependency graph for Maven. A key finding reveals a trend in “Publish-Before-Patch” scenarios: maintainers prioritize patching severe vulnerabilities more quickly after public disclosure, reducing response time by 48.3% from low (151 days) to critical severity (78 days). Additionally, project characteristics, such as contributor absence factor and issue activity, strongly correlate with the presence of CVEs. Leveraging tools such as the Goblin Ecosystem, OSV.dev, and OpenDigger, our findings provide insights into the practices and challenges of managing security risks in Maven.},
+booktitle = {2025 IEEE/ACM 22nd International Conference on Mining Software Repositories (MSR)},
+pages = {349–353},
+numpages = {5},
+location = {Ottawa, ON, Canada}
+}
