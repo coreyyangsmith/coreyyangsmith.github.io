@@ -202,6 +202,33 @@
     z-index: 100;
   }
 
+  #theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    z-index: 101;
+
+    a {
+      width: 25px;
+      display: flex;
+      justify-content: center;
+      margin: 0 1rem 0 0;
+      padding: 0.5rem 0;
+      cursor: pointer;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  button:not(.hidden) ~ #theme-toggle {
+    right: 2.5rem;
+  }
+
   .visible-links {
     display: table;
 
@@ -222,15 +249,6 @@
         a {
           margin-right: 0;
         }
-      }
-    }
-
-    #theme-toggle {
-      a {
-        width: 25px;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
       }
     }
 

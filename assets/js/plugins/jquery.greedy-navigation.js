@@ -8,26 +8,36 @@
 var $nav = $('#site-nav');
 var $btn = $('#site-nav button');
 var $vlinks = $('#site-nav .visible-links');
-var $vlinks_persist_tail = $vlinks.children("*.persist.tail");
 var $hlinks = $('#site-nav .hidden-links');
+var $themeToggle = $('#theme-toggle');
 
 var breaks = [];
 
+function availableSpace() {
+  var toggleWidth = $themeToggle.outerWidth(true) || 0;
+
+  if ($btn.hasClass('hidden')) {
+    return $nav.width() - toggleWidth;
+  }
+
+  return $nav.width() - $btn.width() - 30 - toggleWidth;
+}
+
 function updateNav() {
 
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
+  var space = availableSpace();
 
   // The visible list is overflowing the nav
-  if ($vlinks.width() > availableSpace) {
+  if ($vlinks.width() > space) {
 
-    while ($vlinks.width() > availableSpace && $vlinks.children("*:not(.persist)").length > 0) {
+    while ($vlinks.width() > space && $vlinks.children("*:not(.persist)").length > 0) {
       // Record the width of the list
       breaks.push($vlinks.width());
 
       // Move item to the hidden list
       $vlinks.children("*:not(.persist)").last().prependTo($hlinks);
 
-      availableSpace = $btn.hasClass("hidden") ? $nav.width() : $nav.width() - $btn.width() - 30;
+      space = availableSpace();
 
       // Show the dropdown btn
       $btn.removeClass("hidden");
@@ -37,13 +47,9 @@ function updateNav() {
   } else {
 
     // There is space for another item in the nav
-    while (breaks.length > 0 && availableSpace > breaks[breaks.length - 1]) {
+    while (breaks.length > 0 && space > breaks[breaks.length - 1]) {
       // Move the item to the visible list
-      if ($vlinks_persist_tail.children().length > 0) {
-        $hlinks.children().first().insertBefore($vlinks_persist_tail);
-      } else {
-        $hlinks.children().first().appendTo($vlinks);
-      }
+      $hlinks.children().first().appendTo($vlinks);
       breaks.pop();
     }
 
