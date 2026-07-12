@@ -32,11 +32,14 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% if post.authors %}
+      <p class="archive__item-excerpt">{% include highlight-author.html text=post.authors %}</p>
     {% endif %}
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+    {% if post.date %}
+      <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>
+    {% endif %}
+    {% if post.venue %}
+      <p class="archive__item-excerpt">{% if post.type %}{{ post.type }}, {% endif %}<i>{{ post.venue }}</i>{% if post.location %}, {{ post.location }}{% endif %}</p>
+    {% endif %}
   </article>
 </div>

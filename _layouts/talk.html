@@ -30,18 +30,49 @@ layout: default
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
+        {% if page.authors %}<p>{% include highlight-author.html text=page.authors %}</p>{% endif %}
         {% if page.modified %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        {% if page.talk_type %}<p>{{page.talk_type}} at {{ page.venue }},  {{page.location}} {% endif %}
+        {% if page.type %}<p>{{ page.type }} at {{ page.venue }}, {{ page.location }}</p>{% elsif page.talk_type %}<p>{{ page.talk_type }} at {{ page.venue }}, {{ page.location }}</p>{% endif %}
 
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
         {{ content }}
+
+        {% if page.citation %}
+          {% capture highlighted_citation %}{% include highlight-author.html text=page.citation %}{% endcapture %}
+        {% endif %}
+        {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
+          <p style="font-size: smaller">Recommended citation: {{ highlighted_citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% elsif page.citation and page.paperurl and page.slidesurl %}
+          <p style="font-size: smaller">Recommended citation: {{ highlighted_citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
+        {% elsif page.citation and page.paperurl and page.bibtexurl %}
+          <p style="font-size: smaller">Recommended citation: {{ highlighted_citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% elsif page.citation and page.paperurl %}
+          <p style="font-size: smaller">Recommended citation: {{ highlighted_citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a></p>
+        {% elsif page.citation and page.slidesurl and page.bibtexurl %}
+          <p style="font-size: smaller">Recommended citation: {{ highlighted_citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% elsif page.citation and page.slidesurl %}
+          <p style="font-size: smaller">Recommended citation: {{ highlighted_citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a></p>
+        {% elsif page.slidesurl and page.bibtexurl %}
+          <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% elsif page.paperurl and page.bibtexurl %}
+          <p style="font-size: smaller"><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% elsif page.citation and page.bibtexurl %}
+          <p style="font-size: smaller">Recommended citation: {{ highlighted_citation }}<br /><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% elsif page.citation %}
+          <p style="font-size: smaller">Recommended citation: {{ highlighted_citation }}</p>
+        {% elsif page.slidesurl %}
+          <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
+        {% elsif page.bibtexurl %}
+          <p style="font-size: smaller"><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% endif %}
+
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 

@@ -1,18 +1,19 @@
-current directory: /Users/corey/Desktop/repos/Professional/coreyyangsmith.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+current directory: /Users/corey/Desktop/repos/coreyyangsmith.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
 /opt/homebrew/opt/ruby/bin/ruby extconf.rb
 creating Makefile
 
-current directory: /Users/corey/Desktop/repos/Professional/coreyyangsmith.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20250801-72709-n4bsvz sitelibdir\=./.gem.20250801-72709-n4bsvz clean
+current directory: /Users/corey/Desktop/repos/coreyyangsmith.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260712-43000-re5wj4 sitelibdir\=./.gem.20260712-43000-re5wj4 clean
 
-current directory: /Users/corey/Desktop/repos/Professional/coreyyangsmith.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20250801-72709-n4bsvz sitelibdir\=./.gem.20250801-72709-n4bsvz
+current directory: /Users/corey/Desktop/repos/coreyyangsmith.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260712-43000-re5wj4 sitelibdir\=./.gem.20260712-43000-re5wj4
 compiling cparse.c
 linking shared-object racc/cparse.bundle
+ld: warning: dylib (/opt/homebrew/Cellar/ruby/3.4.5/lib/libruby.3.4.dylib) was built for newer macOS version (15.0) than being linked (13.3)
 
-current directory: /Users/corey/Desktop/repos/Professional/coreyyangsmith.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20250801-72709-n4bsvz sitelibdir\=./.gem.20250801-72709-n4bsvz install
-/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20250801-72709-n4bsvz/racc
+current directory: /Users/corey/Desktop/repos/coreyyangsmith.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260712-43000-re5wj4 sitelibdir\=./.gem.20260712-43000-re5wj4 install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20260712-43000-re5wj4/racc
 
-current directory: /Users/corey/Desktop/repos/Professional/coreyyangsmith.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20250801-72709-n4bsvz sitelibdir\=./.gem.20250801-72709-n4bsvz clean
+current directory: /Users/corey/Desktop/repos/coreyyangsmith.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260712-43000-re5wj4 sitelibdir\=./.gem.20260712-43000-re5wj4 clean

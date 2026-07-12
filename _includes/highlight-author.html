@@ -1,0 +1,9 @@
+{% comment %}
+  Bold site-owner name variants in an author list or citation string.
+  Usage: {% include highlight-author.html text=post.authors %}
+{% endcomment %}
+{% assign highlighted = include.text
+  | replace: "Yang-Smith, Corey", "<strong>Yang-Smith, Corey</strong>"
+  | replace: "Corey Yang-Smith", "<strong>Corey Yang-Smith</strong>"
+%}
+{{ highlighted }}
