@@ -49,8 +49,10 @@ When you are initially working on your website, it is very useful to be able to 
     ```
     then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and open `.gitignore` then add `vendor` inside it.
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+1. Run `bundle exec jekyll serve --config _config.yml,_config_local.yml -l -H localhost` to generate the HTML and serve it from `localhost:4000`. The local override clears `site.url` so permalinks and asset links stay host-relative (they work on localhost and on the live site). Without `_config_local.yml`, archive links are absolute production URLs (`https://coreyyangsmith.github.io/...`) even when previewing locally.
+    You may also use `jekyll serve --config _config.yml,_config_local.yml -l -H localhost` if your global Jekyll install matches the project dependencies.
+
+Use root-relative paths for files in front matter (e.g. `slidesurl: '/files/example.pdf'`) so PDFs and papers resolve correctly in both environments. Production / GitHub Pages builds should continue to use only `_config.yml`.
 
 If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
 

@@ -1,0 +1,3 @@
+# Clears site.url so links stay host-relative during local / Docker previews.
+# Production builds use only _config.yml (url: https://coreyyangsmith.github.io).
+url: ""

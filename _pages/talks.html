@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Invited Talks and Tutorials"
+title: "Tutorials and Invited Talks"
 permalink: /talks/
 author_profile: true
 ---
@@ -14,15 +14,20 @@ author_profile: true
 {% include base_path %}
 
 {% if site.talk_category %}
-  {% for category in site.talk_category %}
+  {% assign talk_category_order = "tutorials,invited" | split: "," %}
+  {% for category_key in talk_category_order %}
+    {% assign category = site.talk_category[category_key] %}
+    {% if category == nil %}
+      {% continue %}
+    {% endif %}
     {% assign category_posts = "" | split: "" %}
     {% for post in site.talks reversed %}
-      {% if post.category == category[0] %}
+      {% if post.category == category_key %}
         {% assign category_posts = category_posts | push: post %}
       {% endif %}
     {% endfor %}
 
-    <h2>{{ category[1].title }}</h2><hr />
+    <h2>{{ category.title }}</h2><hr />
     {% if category_posts.size > 0 %}
       {% for post in category_posts %}
         {% include archive-single-talk.html %}
