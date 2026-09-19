@@ -13,8 +13,8 @@ title                    : "Corey Yang-Smith"
 title_separator          : "-"
 name                     : &name "Corey Yang-Smith"
 description              : &description "ML Scientist @ SOVRA | PhD Student @ University of Calgary"
-url                      : https://coreyyangsmith.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+url                      : "https://coreyyangsmith.com"
+baseurl                  : ""
 repository               : "coreyyangsmith/coreyyangsmith.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -28,7 +28,7 @@ author:
   bio              : "ML Scientist @ SOVRA | PhD Student @ University of Calgary"
   location         : "Calgary, AB, Canada"
   employer         : "University of Calgary"
-  uri              : "https://coreyyangsmith.github.io/"
+  uri              : "https://coreyyangsmith.com/"
   email            : "corey.yangsmith+gh@gmail.com" 
 
   # Academic websites

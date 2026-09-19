@@ -1,8 +1,34 @@
+{% if page.collection %}
+  {% assign ga_content_group = page.collection %}
+{% elsif page.url == "/" %}
+  {% assign ga_content_group = "home" %}
+{% else %}
+  {% assign ga_path = page.url | downcase %}
+  {% if ga_path == "/publications/" or ga_path contains "/publication" %}
+    {% assign ga_content_group = "publications" %}
+  {% elsif ga_path contains "/portfolio" %}
+    {% assign ga_content_group = "portfolio" %}
+  {% elsif ga_path contains "/talk" %}
+    {% assign ga_content_group = "talks" %}
+  {% elsif ga_path contains "/teaching" %}
+    {% assign ga_content_group = "teaching" %}
+  {% elsif ga_path contains "/service" %}
+    {% assign ga_content_group = "service" %}
+  {% elsif ga_path contains "/cv" %}
+    {% assign ga_content_group = "cv" %}
+  {% else %}
+    {% assign ga_content_group = "other" %}
+  {% endif %}
+{% endif %}
+
 <script async src="https://www.googletagmanager.com/gtag/js?id={{site.analytics.google.tracking_id}}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{site.analytics.google.tracking_id}}');
+  gtag('config', '{{site.analytics.google.tracking_id}}', {
+    content_group: '{{ ga_content_group }}'
+  });
 </script>
+<script src="{{ base_path }}/assets/js/analytics-events.js"></script>
